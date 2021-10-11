@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Oh my food-accueil</title>
     <link href="../images/logo/ohmyfood@2x.svg" rel="icon" type="image/svg">
+    <link  href="../SASS/main.sass" rel="stylesheet" type="text/css" >
+    <script src="https://kit.fontawesome.com/2bb5359199.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -17,7 +19,11 @@
 <main>
     <section class="reservation">
         <div class="localisation">
-
+            <form class="search-form">
+                <label for="locationsearch"></label>
+                <i class="fas fa-map-marker-alt"></i>
+                <input id="locationsearch" name="location-search" placeholder="Paris, Belleville" type="search">
+            </form>
         </div>
         <div class="reservation-title">
             <h2>Réservez le menu qui vous convient</h2>
@@ -39,7 +45,7 @@
 
             </div>
             <div class="explication-icon">
-
+                <i class="fas fa-mobile-alt"></i>
             </div>
             <div class="explication-text">
                 <p>Choisissez un restaurant</p>
@@ -50,7 +56,7 @@
 
             </div>
             <div class="explication-icon">
-
+                <i class="fas fa-list-ul"></i>
             </div>
             <div class="explication-text">
                 <p>Composez votre menu</p>
@@ -61,7 +67,7 @@
 
             </div>
             <div class="explication-icon">
-
+                <i class="fas fa-store"></i>
             </div>
             <div class="explication-text">
                 <p>Dégustez au restaurant</p>
@@ -81,6 +87,9 @@
                         <img alt="La palette du goût"
                              src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
                     </div>
+                    <div class="new">
+
+                    </div>
                 </div>
                 <div class="restaurant-description-box">
                     <div class="restaurant-name">
@@ -90,7 +99,7 @@
                         <p>Ménilmontant</p>
                     </aside>
                     <div class="restaurant-like">
-
+                        <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </a>
@@ -101,6 +110,9 @@
                     <div class="restaurant-img">
                         <img alt="La note enchantée" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
                     </div>
+                    <div class="new">
+
+                    </div>
                 </div>
                 <div class="restaurant-description-box">
                     <div class="restaurant-name">
@@ -110,7 +122,7 @@
                         <p>Charonne</p>
                     </aside>
                     <div class="restaurant-like">
-
+                        <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </a>
@@ -130,7 +142,7 @@
                         <p>Cité Rouge</p>
                     </aside>
                     <div class="restaurant-like">
-
+                        <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </a>
@@ -151,7 +163,7 @@
                         <p>Folie-Méricourt</p>
                     </aside>
                     <div class="restaurant-like">
-
+                        <i class="fas fa-heart"></i>
                     </div>
                 </div>
             </a>
@@ -169,8 +181,8 @@
     <div class="footer-nav">
         <nav>
             <ul>
-                <li><a href="#"><b>Proposer un restaurant</b></a></li>
-                <li><a href="#"><b>Devenir partenaire</b></a></li>
+                <li><a href="#"><i class="fas fa-utensils"></i><b>Proposer un restaurant</b></a></li>
+                <li><a href="#"><i class="fas fa-handshake"></i><b>Devenir partenaire</b></a></li>
                 <li><a href="#">Mentions légales</a></li>
                 <li><a href="mailto:ohmyfood@food.com">Contact</a></li>
             </ul>
