@@ -1,10 +1,21 @@
 @keyframes loading
-  from
+  0%
     z-index: 999
     opacity: 0.7
-  to
-    z-index: 0
+  33%
+    opacity: 0.3
+  66%
     opacity: 0.7
+  100%
+    z-index: -1
+    opacity: 0
+
+
+@keyframes rotate
+  from
+    rotation: 0
+  to
+    rotation: 1turn
 
 @function dark($color, $percentage)
   @return darken($color, $percentage)
