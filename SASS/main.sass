@@ -1,7 +1,8 @@
-$color-primary: #9356DC
-$color-secondary: #FF79DA
-$color-tertiary: #99E2D0
- @font-face
+@import "./variables"
+
+
+
+@font-face
    font-family: Shrikhand
    src: url("../font/Shrikhand-Regular.otf")
 
@@ -9,13 +10,32 @@ body
   width: 100%
   font-family: "Roboto Light", sans-serif
 
+
+header, main, footer, .restaurant
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+
+
 footer
   background-color: black
 
 h1, h2, h3
   font-family: Shrikhand, Arial, sans-serif
 
-
 .reservation, .restaurant
   background-color: lightgray
 
+.restaurant-box
+  width: 80%
+
+.restaurant-img-box
+  width: 100%
+
+.restaurant-img
+  object-fit: cover
+  object-position: center
+  height: 100%
+  width: 100%
