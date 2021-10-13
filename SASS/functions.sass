@@ -13,10 +13,15 @@
 
 @keyframes rotate
   from
-    transform: rotate(0) scale(1)
+    transform: rotate(0)
   to
-    transform: rotate(360deg) scale(3)
+    transform: rotate(360deg)
 
+@keyframes scaling
+  from
+    transform: scale(1)
+  to
+    transform: scale(3)
 
 @function dark($color, $percentage)
   @return darken($color, $percentage)
