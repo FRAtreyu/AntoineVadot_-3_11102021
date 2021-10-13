@@ -272,7 +272,6 @@
   align-items: center;
   justify-content: center;
   min-width: 20%;
-  flex-shrink: 0;
   height: 86px;
   color: white;
   background-color: #99E2D0;
