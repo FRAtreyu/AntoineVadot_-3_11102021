@@ -167,6 +167,8 @@
   background-color: #F2F2F2;
   border-radius: 20px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 0;
 }
 .explication-box:hover {
@@ -283,7 +285,7 @@
   animation: filling-heart 2s 1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   .explication {
     flex-direction: row;
     flex-wrap: wrap;
@@ -293,6 +295,9 @@
   .explication-title {
     width: 100%;
     text-align: center;
+  }
+  .explication-box {
+    margin: auto;
   }
 
   .restaurant {
