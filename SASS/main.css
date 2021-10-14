@@ -368,6 +368,7 @@
   height: 35px;
   width: 300px;
   white-space: nowrap;
+  text-wrap: none;
   overflow: hidden;
   text-overflow: ellipsis;
 }
