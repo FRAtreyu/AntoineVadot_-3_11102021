@@ -30,6 +30,17 @@
     transform: scale(3);
   }
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes loading {
   0% {
     z-index: 999;
@@ -60,6 +71,17 @@
   }
   to {
     transform: scale(3);
+  }
+}
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .loading-spinner {
@@ -229,6 +251,12 @@
   width: 20%;
   padding-right: 25px;
 }
+.restaurant-like:hover .fas.fa-heart {
+  visibility: visible;
+}
+.restaurant-like:hover .far.fa-heart {
+  visibility: hidden;
+}
 
 .restaurant-page {
   display: flex;
@@ -346,6 +374,18 @@
   margin: 50px 0;
 }
 
+.entrees {
+  animation: apparition 1s 1;
+}
+
+.dish {
+  animation: apparition 2s 1;
+}
+
+.dessert {
+  animation: apparition 3s 1;
+}
+
 @font-face {
   font-family: Shrikhand;
   src: url("../font/Shrikhand-Regular.otf");
@@ -406,14 +446,16 @@ header {
   height: 100%;
 }
 
-.fa-heart {
+.far.fa-heart {
   z-index: 1;
-  transform: scale(1);
-  transition: transform 200ms;
 }
-.fa-heart:hover {
-  transform: scale(2);
+
+.fas.fa-heart {
+  visibility: hidden;
   color: #9356DC;
+  z-index: 1;
+  position: relative;
+  right: 16px;
 }
 
 .btn {
