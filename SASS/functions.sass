@@ -31,6 +31,13 @@
   100%
     opacity: 1
 
+@keyframes filling-heart
+  from
+    transform-origin: bottom
+    transform: scale(0)
+  to
+    transform: scale(1)
+
 @function dark($color, $percentage)
   @return darken($color, $percentage)
 
