@@ -9,6 +9,8 @@
     width: 100%
     height: 250px
     overflow: hidden
+    max-width: 1000px
+    margin: auto
 
   &-page-img
     object-fit: cover
@@ -39,6 +41,7 @@
     &-order
       display: flex
       flex-direction: column
+      max-width: 400px
 
       &-title
         display: flex
@@ -110,6 +113,9 @@
   transition: transform 300ms
 
 .order-button-div
+  display: flex
+  justify-content: center
+  width: 90%
   margin: 50px 0
 
 .entrees
@@ -124,3 +130,13 @@
 .underline
   border-bottom: solid 3px $color-tertiary
   padding-bottom: 3px
+
+
+@media screen and (min-width: 1000px)
+  .restaurant-menu
+    &-box
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-around
+    &-order
+      width: 27%
