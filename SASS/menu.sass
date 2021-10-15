@@ -77,7 +77,6 @@
     height: 80%
     width: 85%
     overflow: hidden
-    text-overflow: ellipsis
     padding: 8px 0
 
   &-price
@@ -93,10 +92,12 @@
 
   &-title, &-sidedish
     height: 35px
-    width: 300px
-    white-space: nowrap
+    width: 100%
     overflow: hidden
-    text-overflow: ellipsis
+    & p
+      text-overflow: ellipsis
+      overflow: hidden
+      white-space: nowrap
 
   &-sidedish
     font-size: 0.9em
