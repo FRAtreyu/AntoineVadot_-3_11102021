@@ -382,7 +382,7 @@
   transform: scaleX(1);
 }
 .menu-item-box:hover .menu-item-checkbox .fa-check-circle {
-  animation: rotate 300ms 1;
+  animation: rotate 500ms 1;
 }
 .menu-item-text {
   height: 80%;
@@ -424,7 +424,7 @@
   visibility: hidden;
   transform: scaleX(0);
   transform-origin: 100% 50%;
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 
 .order-button-div {
