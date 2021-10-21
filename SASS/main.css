@@ -163,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 390px;
+  width: 290px;
   background-color: #F2F2F2;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -190,13 +190,13 @@
   position: relative;
 }
 .explication-number.one {
-  right: 28px;
+  right: 19px;
 }
 .explication-number.two {
-  right: 25px;
+  right: 16px;
 }
 .explication-number.three {
-  right: 22px;
+  right: 13px;
 }
 .explication-icon {
   display: flex;
