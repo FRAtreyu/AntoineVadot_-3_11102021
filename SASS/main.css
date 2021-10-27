@@ -111,7 +111,7 @@
   left: 0;
   height: 100%;
   margin: 0;
-  width: 100vw;
+  width: 100%;
   background-color: #FF79DA;
   opacity: 0;
   z-index: -1;
@@ -124,7 +124,7 @@
 .reservation {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-color: #F2F2F2;
   justify-content: center;
@@ -154,12 +154,14 @@
 .explication {
   display: flex;
   flex-direction: column;
-  padding-left: 3%;
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
   height: auto;
   margin: 20px 0;
+}
+.explication-title {
+  margin-left: 3%;
 }
 .explication-box {
   display: flex;
@@ -474,8 +476,10 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: white;
-  width: 100vw;
+  width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -496,9 +500,13 @@ h1 {
   font-family: Shrikhand, sans-serif;
 }
 
+.far, .fas {
+  font-size: x-large;
+}
+
 header {
   display: flex;
-  width: 100vw;
+  width: 100%;
   justify-content: center;
   align-items: center;
   height: 10vh;
@@ -538,7 +546,7 @@ header {
   color: #9356DC;
   z-index: 1;
   position: relative;
-  right: 17px;
+  right: 24px;
 }
 
 .btn {
